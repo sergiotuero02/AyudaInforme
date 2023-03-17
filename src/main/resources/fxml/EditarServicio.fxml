@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/EditarServicio.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PeregrinosFX.controller.EditarServicioController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="servicioLBL" layoutX="33.0" layoutY="59.0" text="Servicio:" textFill="#45322e">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="serviciosCB" layoutX="133.0" layoutY="61.0" onAction="#cargarTabla" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: D5B794;" />
+                <Label fx:id="nombreLBL" layoutX="33.0" layoutY="104.0" text="Nombre:" textFill="#45322e">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="precioLBL" layoutX="32.0" layoutY="194.0" text="Precio:" textFill="#45322e">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nombreTF" layoutX="33.0" layoutY="129.0" prefHeight="43.0" prefWidth="216.0" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                    </font>
+                </TextField>
+                <Line endX="129.0" fill="#45322e" layoutX="119.0" layoutY="171.0" startX="-85.19999694824219" startY="-7.62939453125E-6" stroke="#45322e" strokeWidth="0.5" />
+                <TextField fx:id="precioTF" layoutX="33.0" layoutY="216.0" prefHeight="43.0" prefWidth="216.0" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                    </font>
+                </TextField>
+                <Line endX="111.0" layoutX="133.0" layoutY="258.0" startX="-100.0" stroke="#45322e" strokeWidth="0.5" />
+                <Button fx:id="confirmarBTN" onAction="#editar" layoutX="33.0" layoutY="311.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #009000;" text="Confirmar" textFill="#fafafa">
+                    <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelarBTN" layoutX="213.0" layoutY="311.0" mnemonicParsing="false" onAction="#volverAlMenu" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #B22222;" text="Cancelar" textFill="#fafafa">
+                    <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                    </font>
+                </Button>
+                <Label layoutX="212.0" layoutY="227.0" prefHeight="30.0" prefWidth="34.0" text="€" textFill="#45322e">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="paradaTB" layoutX="377.0" layoutY="102.0" prefHeight="200.0" prefWidth="201.0">
+                    <columns>
+                        <TableColumn fx:id="idParadaTC" prefWidth="101" text="Id Parada" />
+                        <TableColumn fx:id="nombreParadaTC" prefWidth="101" text="Nombre" />
+                    </columns>
+                </TableView>
+                <ComboBox fx:id="paradasCB" layoutX="376.0" layoutY="61.0" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: D5B794;" />
+                <Button fx:id="addBTN" layoutX="504.0" layoutY="56.0" mnemonicParsing="false" onAction="#addTabla" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #45322e;" text="Añadir" textFill="#eed4b5">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+                <ComboBox fx:id="paradasdelCB" layoutX="376.0" layoutY="317.0" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: D5B794;" />
+                <Button fx:id="supBTN" onAction="#borrarTabla" layoutX="504.0" layoutY="312.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #B22222;" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

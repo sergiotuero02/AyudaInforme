@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PeregrinosFX.controller.AlojarseController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/Alojarse.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="paradaLBL" layoutX="32.0" layoutY="57.0" text="Parada:" textFill="45322e">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="peregrinoLBL" layoutX="300.0" layoutY="57.0" text="Peregrino:" textFill="45322e">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="peregrinoCB" layoutX="433.0" layoutY="62.0" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: D5B794;" />
+            <ComboBox fx:id="paradaCB" layoutX="130.0" layoutY="62.0" onAction="#servicioSelected" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: D5B794;" />
+            <Label fx:id="estanciaLBL" layoutX="32.0" layoutY="120.0" text="¿Va a realizar una estancia?" textFill="45322e">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="estanciaCheck" layoutX="365.0" layoutY="129.0" mnemonicParsing="false" onAction="#estanciaClick" prefWidth="25.0" textFill="45322e" />
+            <Label fx:id="vipLBL" layoutX="32.0" layoutY="157.0" text="VIP:" textFill="#45322e70">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+               <Label fx:id="servicioLBL" layoutX="32.0" layoutY="195.0" text="Servicios:" textFill="#45322e70">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="aceptarBTN" layoutX="29.0" layoutY="345.0" mnemonicParsing="false" onAction="#alojar" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #009000;" text="Alojarse" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="cancelarBTN" layoutX="218.0" layoutY="345.0" mnemonicParsing="false" onAction="#cancelarAction" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #B22222;" text="Inicio" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <CheckBox fx:id="vipCB" disable="true" layoutX="94.0" layoutY="162.0" mnemonicParsing="false" />
+            <TableView fx:id="servicioTB" layoutX="377.0" layoutY="183.0" prefHeight="200.0" prefWidth="201.0">
+               <columns>
+                  <TableColumn fx:id="nombreTC" prefWidth="101" text="Servicio" />
+                  <TableColumn fx:id="precioTC" prefWidth="101" text="Precio" />
+               </columns>
+            </TableView>
+            <ComboBox fx:id="serviciosCB" layoutX="130.0" layoutY="195.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: D5B794;" />
+            <Button fx:id="addBTN" layoutX="264.0" layoutY="193.0" mnemonicParsing="false" onAction="#addServicio" prefHeight="18.0" prefWidth="73.0" style="-fx-background-color: #45322e;" text="Añadir" textFill="#eed4b5">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Label fx:id="pagosLBL" layoutX="32.0" layoutY="235.0" text="Pago:" textFill="#45322e70">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font></Label>
+            <ComboBox fx:id="pagosCB" layoutX="130.0" layoutY="235.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: D5B794;" />
+            <Label fx:id="precioLBL" layoutX="32.0" layoutY="270.0" text="Precio:" textFill="#45322e70">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="totalLBL" layoutX="130.0" layoutY="275.0" prefHeight="27.0" prefWidth="120.0" text="" textFill="#45322e70">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="extraLBL" layoutX="32.0" layoutY="302.0" text="Extras:" textFill="#45322e70">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <TextField fx:id="extraTF" layoutX="120.0" layoutY="297.0" prefHeight="18.0" prefWidth="235.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></TextField>
+            <Line endX="100.0" layoutX="231.0" layoutY="329.0" startX="-100.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

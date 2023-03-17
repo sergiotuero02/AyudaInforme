@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PeregrinosFX.controller.EnvioACasaController">
+   <children>
+      <Pane layoutX="359.0" layoutY="150.0" prefHeight="769.0" prefWidth="1019.0" styleClass="pane" stylesheets="@../styles/EnvioACasa.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="direccionLBL" layoutX="39.0" layoutY="65.0" prefHeight="31.0" prefWidth="219.0" text="Dirección" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="alturaLBL" layoutX="212.0" layoutY="166.0" prefHeight="36.0" prefWidth="65.0" text="Alto:" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="alturaTF" layoutX="270.0" layoutY="165.0" prefHeight="41.0" prefWidth="87.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+            <Label fx:id="anchoLBL" layoutX="39.0" layoutY="165.0" prefHeight="36.0" prefWidth="87.0" text="Ancho:" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="anchoTF" layoutX="126.0" layoutY="165.0" prefHeight="41.0" prefWidth="87.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+            <Label fx:id="profundoLBL" layoutX="358.0" layoutY="165.0" prefHeight="36.0" prefWidth="120.0" text="Profundo:" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="profundoTF" layoutX="474.0" layoutY="165.0" prefHeight="41.0" prefWidth="87.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+            <Label fx:id="localidadLBL" layoutX="39.0" layoutY="115.0" prefHeight="31.0" prefWidth="411.0" text="Localidad " textFill="#45322e">
+            <font>
+               <Font name="System Bold Italic" size="25.0" />
+            </font>
+         </Label>
+            <Label fx:id="pesoLBL" layoutX="39.0" layoutY="215.0" prefHeight="36.0" prefWidth="87.0" text="Peso:" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="urgenteLBL" layoutX="39.0" layoutY="265.0" prefHeight="36.0" prefWidth="105.0" text="Urgente" textFill="#45322e">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pesoTF" layoutX="126.0" layoutY="213.0" prefHeight="41.0" prefWidth="87.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+
+            <TextField fx:id="direccionTF" layoutX="189.0" layoutY="56.0" prefHeight="31.0" prefWidth="350.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+            <TextField fx:id="localidadTF" layoutX="189.0" layoutY="109.0" prefHeight="31.0" prefWidth="350.0" style="-fx-background-color: trasnparent;">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></TextField>
+            <Button fx:id="aceptarBTN" onAction="#enviarACasa" layoutX="60.0" layoutY="325.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #009000;" text="Aceptar" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="cancelarBTN" onAction="#cancelarAction" layoutX="406.0" layoutY="325.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #B22222;" text="Cancelar" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Line endX="250.0" layoutX="290.0" layoutY="95.0" startX="-100.0" />
+            <Line endX="250.0" layoutX="289.0" layoutY="151.0" startX="-100.0" />
+            <Line endX="-20.199996948242188" layoutX="223.0" layoutY="202.0" startX="-100.0" />
+            <Line endX="-20.199996948242188" layoutX="222.0" layoutY="249.0" startX="-100.0" />
+            <Line endX="-20.199996948242188" layoutX="576.0" layoutY="202.0" startX="-100.0" />
+            <Line endX="-20.199996948242188" layoutX="369.0" layoutY="202.0" startX="-100.0" />
+            <CheckBox fx:id="urgenteCB" layoutX="152.0" layoutY="275.0" mnemonicParsing="false"/>
+         </children></Pane>
+   </children>
+</AnchorPane>
